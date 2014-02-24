@@ -12,8 +12,6 @@ describe('Smoke test: ', function() {
     html.table(function() {
       html.tr(function() {
         html.td('Test passed', { colspan: 2 });
-      }, {
-        border: 1,
       });
       html.tr(function() {
         html.td(function() {
@@ -23,6 +21,8 @@ describe('Smoke test: ', function() {
           html.input({ type: 'text', name: 'test', value: 'OK' });
         });
       });
+    }, {
+      border: 1
     });
     var golden = 
       '<h1>\n' +
@@ -30,8 +30,8 @@ describe('Smoke test: ', function() {
       '</h1>\n' +
       'Sample text\n' +
       '<br>\n' +
-      '<table>\n' +
-      '  <tr border="1">\n' +
+      '<table border="1">\n' +
+      '  <tr>\n' +
       '    <td colspan="2">\n' +
       '      Test passed\n' +
       '    </td>\n' +
