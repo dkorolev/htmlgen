@@ -1,0 +1,51 @@
+{
+  "name": "htmlgen",
+  "version": "0.0.1",
+  "description": "Simple canonical HTML generator.",
+  "author": {
+    "email": "dmitry.korolev@gmail.com",
+    "url": "http://dimakorolev.com/",
+    "name": "Dima Korolev"
+  },
+  "homepage": "https://github.com/dkorolev/htmlgen",
+  "repository": {
+    "url": "git@github.com:dkorolev/htmlgen.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/dkorolev/htmlgen/issues"
+  },
+  "license": "MIT",
+  "licenses": [{
+    "type": "MIT"
+  }],
+  "tags": [
+    "html",
+    "htmlgen",
+    "generate",
+    "web",
+    "browser",
+    "ui",
+    "functional"
+  ],
+  "keywords": [
+    "html",
+    "htmlgen",
+    "generate",
+    "web",
+    "browser",
+    "ui",
+    "functional"
+  ],
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "engines": {
+    "node": ">= 0.8.x"
+  },
+  "main": "lib/htmlgen.js",
+  "dependencies": {
+    "underscore": "*",
+    "mocha": "*"
+  }
+}
